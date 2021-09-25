@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Tu peso en Marte y Jupiter</title>
+    </head>
+    <body>
+        <h1>Tu peso en otros planetas</h1>
+        <p>En este programa podras ver que tu peso es distinto en otros planetas como Marte y Jupiter</p>
+        <script type = "text/javascript">
+         var usuario = prompt("Escriba aqui su peso");
+         var planeta = parseInt(prompt("Presione\n 1 para Marte y 2 para Jupiter"));
+         var peso = parseInt(usuario);
+         var g_tierra = 9.8;
+         var g_marte = 3.7;
+         var g_jupiter = 24.8;
+         var peso_final;
+         if (planeta == 1)
+         {
+             peso_final = peso * g_marte / g_tierra;
+             peso_final = parseInt(peso_final);
+             document.write("Tu peso en Marte es <strong>" + peso_final + "</strong> kilos");
+         }
+         else if (planeta == 2)
+         {
+             peso_final = peso * g_jupiter / g_tierra;
+             peso_final = parseInt(peso_final);
+             document.write("Tu peso en Jupiter es <strong>" + peso_final + "</strong> kilos")
+         }
+         else
+         {
+             peso_final = parseInt(peso_final);
+             peso_final = 1000000;
+             document.write("Tu peso en el Planeta de los simios es <strong>" + peso_final + "</strong> kilos")
+         }
+        </script>
+    </body>
+</html>
